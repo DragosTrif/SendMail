@@ -1,2 +1,3 @@
 # SendMail
-Simple implementation of an Perl based email client 
+
+## Simple implementation of an Perl based email client 
