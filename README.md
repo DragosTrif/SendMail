@@ -36,7 +36,6 @@ Log::Log4perl->easy_init(
 );
 my $logger = get_logger();
 
-# yarfa.khan@cloudprimero.com
 if ( DateTime->now()->is_last_day_of_month() || 1 == 1 ) {
     $logger->debug('It last day of the month! Preparing reports:');
     my $env = Dotenv->load('/home/dragos/projects/scripts/.mail_env');
@@ -66,7 +65,6 @@ if ( DateTime->now()->is_last_day_of_month() || 1 == 1 ) {
     $logger->debug('Done with reports');
     my $to = [
 
-        #'yarfa.khan@cloudprimero.com',
         'dragos.trif@cloudprimero.com'
     ];
 
