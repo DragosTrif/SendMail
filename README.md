@@ -36,7 +36,7 @@ Log::Log4perl->easy_init(
 );
 my $logger = get_logger();
 
-if ( DateTime->now()->is_last_day_of_month() || 1 == 1 ) {
+if ( DateTime->now()->is_last_day_of_month() ) {
     $logger->debug('It last day of the month! Preparing reports:');
     my $env = Dotenv->load('/home/dragos/projects/scripts/.mail_env');
 
@@ -64,8 +64,7 @@ if ( DateTime->now()->is_last_day_of_month() || 1 == 1 ) {
 
     $logger->debug('Done with reports');
     my $to = [
-
-        'dragos.trif@cloudprimero.com'
+        'dragos.trif@foobar.com'
     ];
 
     my $log_message = sprintf "Sendig mail to: %s with this files attached %s",
